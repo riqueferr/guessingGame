@@ -1,0 +1,16 @@
+from random import randint
+
+print("guessing game\n")
+computer = randint(0, 2)
+print(computer)
+total_attempts = 3;
+attempts = 1;
+
+while attempts <= total_attempts:
+    player = int(input("digita algo aí, mané: "))
+    if player == computer:
+        print("player winner!")
+        break
+    else:
+        print("Computer = {}".format(attempts))
+        attempts = attempts + 1
